@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exam.css">
+    <style>
+        ol{
+    list-style-type: none;
+}
+.ul1{
+    list-style-type: square;
+}
+a{
+    text-decoration: none ;
+}
+    </style>
+</head>
+<body>
+    <!--1.(a)Write a HTML code to create to replicate the following table-->
+    <table class="table1">
+        <thead>
+            <tr>
+        <th>Group</th>
+        <th>Runner</th>
+        <th>Tiime</th>
+        <th>Origin</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>Men</td>
+            <td>1. Peter Teagen</td>
+            <td>2:12:34</td>
+            <td>San Antonio , Texas</td>
+        </tr>
+        <tr>
+            <td>Men</td>
+            <td>Kyle Wills</td>
+            <td>2:13:05</td>
+            <td>Billings , Montana</td>
+        </tr>
+        <tr>
+            <td>Men</td>
+            <td>2.Jason Wu</td>
+            <td>2:14:28</td>
+            <td>Cutler , Colorado</td>
+        </tr>
+        <tr>
+            <td>Women</td>
+            <td>1.Laura Blake</td>
+            <td>2:28:21</td>
+            <td>Park City , Colorado</td>
+        </tr>
+        <tr>
+            <td>Women</td>
+            <td>2.Kathy Lasker</td>
+            <td>2:30:11</td>
+            <td>Chicago , illinios</td>
+        </tr>
+        <tr>
+            <td>Women</td>
+            <td>Lisa Peterson</td>
+            <td>2:31:14</td>
+            <td>Seattle , Washington</td>
+        </tr>
+    </table>
+    <!--(c) Write an HTML code t create the following list-->
+    <!--(d) Write an HTML code to make each list item in (c) a hyperlink-->
+    <ol type="A">
+        <a href="Home"><li>Home</li></a>
+        <a href="About"><li>About</li></a>
+        <a href="Contact"><li>Contact</li></a>
+        <a href="Serices"><li>Services</li></a>
+    </ol>
+    <ul class="ul1">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+    </ul>
+    <table class="table2">
+        <thead>
+            <tr>
+            <th>Home</th>
+            <th>About</th>
+            <th>Admission</th>
+            <th>Contact Us</th>
+            </tr>
+        </thead>
+        <tr>
+            <td colspan="4">Carousel</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Article 1</td>
+            <td>Article 2</td>
+            <td rowspan="2">Sidebar</td>
+        </tr>
+        <tr>
+            <td>Article 3</td>
+        </tr>
+        <tr>
+            <td colspan="4">Footer</td>
+        </tr>
+    </table>
+    <script src="exam.js"></script>
+    <!--3.(a)Write a html code to insert an image Logo.png into html code
+    (b) Write a html code to make the image in (a)above to a hyperlink-->
+    <a href="https://www.netflix.com/"><img src="download.png" alt=""></a>
+    <div>
+    <div class="H1">
+        <h1>This My Banner Text</h1>
+        <nav>
+            <ul class="ul2">
+                <li>Home</li>
+                <li>Info</li>
+                <li>Contact</li>
+                <li>Hubpages</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="p1">
+        <h3>This Is My Paragraph Header</h3>
+        <p>
+            This is where I am going to put useful and informative text about my website<br>
+            This where I am can place even more information about my website<br>
+            This is where I can place a copyright logo
+        </p>
+    </div>
+    </div>
+    <!--5.(a)Write an HTML code to create the following form
+    (b)Write an inline CSS style to style the submit button in (a)-->
+    <form class="form1">
+        <legend>Contact Us</legend>
+        <label for="fname">Name</label><br>
+        <input type="text" name="name" id="fname" placeholder="John"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" placeholder="johndoe@gmail.com"><br><br>
+        <label for="County">County</label>
+
+        <select  id="County"  name="County">
+            <option value="Nakuru">Nakuru</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Nyeri">Nyeri</option>
+        </select><br>
+        <label for="msg">Type Your message here ...</label><br>
+        <textarea name="msg" id="msg" placeholder="Type your message here" cols="30" rows="10"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    </body>
+    </html>
