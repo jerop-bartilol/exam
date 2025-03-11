@@ -54,3 +54,9 @@ selector {
   property: value;
 }
 */
+/*4.(c)Write three style rules for the following HTML snippet, as descrided below*/
+#stanza1{
+    font-style: bold;
+    text-decoration: underline;
+    text-align: center;
+}
